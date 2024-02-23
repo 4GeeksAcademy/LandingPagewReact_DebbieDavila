@@ -2,25 +2,34 @@ import React from "react";
 
 //include images into your bundle
 import rigoImage from "../../img/rigo-baby.jpg";
+import Jumbotron from "./Jumbotron";
+import Navbar from "./Navbar";
+import Card from "./Cards";
 
 //create your first component
 const Home = () => {
 	return (
-		<div className="text-center">
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
+		<div>
+			<Navbar	/>
+			<Jumbotron />
+			<div className="flex-container">
+			<Card url="https://static.showit.co/1200/JhOBqhDRSGSfxziWN85VTA/58611/619.jpg"/>
+			<Card url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7fydWKSToJlyivMBNCrz0gjhsSTb3cIpNrYN_Wg9p06k3LLhK4b3xV656qoWMN_iBcE8&usqp=CAU"/>
+			<Card url="https://static.showit.co/1200/rEcC3BhkTceGYwe1zvd7WA/58611/mg_3265.jpg"/>
+			<Card url="https://static.showit.co/1200/ITAgu-BPSzm8M6bkbfU7mg/58611/fashionportfolio007.jpg"/>
+			</div>		
+			
 			<p>
-				<img src={rigoImage} />
+				
+				
+				Design & Images by{" "}
+				<a href="http://www.debbiedavila.com"> Deborina Dávila</a>, 🦩
 			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
-		</div>
-	);
-};
+			</div>
+	)
+}
+
+
+;
 
 export default Home;

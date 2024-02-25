@@ -1,34 +1,26 @@
 import React from "react";
+import logo from "/src/img/MyLogo.png"; // Import your logo image
 
 const Navbar = () => {
   return (
+    <div className="Navbar" style={{ padding: '100px', fontFamily: 'Tahoma' }} >
+      <nav className="navbar navbar-expand-lg navbar-light ">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
+        <img src={logo} alt="Logo" id="logo" />
+        {/* {MyLogo.png} */}
+        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div className="navbar-nav" style={{ fontFamily: 'Arial, sans-serif' }}>
+            <a className="nav-item nav-link active" href="#">About <span className="sr-only">(current)</span></a>
+            <a className="nav-item nav-link" href="#">Portfolio</a>
+            <a className="nav-item nav-link" href="#">Pricing</a>
+            <a className="nav-item nav-link disabled" href="#">Your Project!</a>
+          </div>
+        </div>
+      </nav>
+    </div>
   )
-}
-
-  ;
-
+};
 export default Navbar;

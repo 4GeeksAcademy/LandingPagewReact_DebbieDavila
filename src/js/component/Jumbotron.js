@@ -1,23 +1,20 @@
 import React from "react";
 
 //include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
+import MyLogo from "../../img/MyLogo.png";
 
 //create your first component
 const Jumbotron = () => {
   return (
-    <div className="jumbotron">
-      <h1 className="display-4">Bonjour Toute le Monde 🌎!</h1>
-      <p className="lead">Welcome to the amazing world of beauty and wings.</p>
+    <div className="jumbotron" style={{ padding: '20px', backgroundColor: '#F0FFFF' }}>
+      <h1 className="display-4" style={{ fontFamily: 'Ballet' }}>Glimpses of the Lavish Life!</h1>
+      <p className="lead" style={{ fontFamily: 'Verdana, sans-serif' }}>Welcome to the world of exquisite beauty...</p>
       <hr className="my-4" />
-      <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
       <p className="lead">
-        <a className="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        <a className="btn btn-primary btn-lg" href="#" role="button" style={{ backgroundColor: '#8FBC8F' }}>Learn more</a>
       </p>
     </div>
-  )
-}
-
-  ;
-
+  );
+};
 export default Jumbotron;
+
